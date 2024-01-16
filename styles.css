@@ -2,12 +2,23 @@
     width:1100px;
     height:250px;
     background:#FFF7AC;
-    margin:none;}
+    margin:none;
+    transition: background-color 2s ease, width 2s ease;
+}
+#banner:hover{
+    background-color: greenyellow;
+    width: 1400px;
+}
 h1{
+    font:'Pixelify Sans';
     margin: auto;
     color: #455FC0;
+    padding:20px;
 }
-#topic{color: #455FC0;}
+#topic{
+    color: #455FC0;
+    padding:20px;
+}
 h2{color: #FFF7AC;}
 main{
     display:flex;
