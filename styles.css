@@ -1,15 +1,43 @@
 #banner{
     width:1100px;
     height:250px;
-    background:#F6F4E2;
-    margin:0;
+    background:#FFF7AC;
+    margin:none;}
+h1{
+    margin: auto;
+    color: #455FC0;
 }
-section{
+#topic{color: #455FC0;}
+h2{color: #FFF7AC;}
+main{
     display:flex;
+    padding: 10px;
+    gap:10px;
+    justify-content: space-evenly;
+    min-height: 400px;
 }
+body{background: #455FC0;}
+#left{display:block;}
+#middle{display:block;}
+#right{display:block;}
 ul {
     list-style-type: none;
 }
 li a{
     list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #FFF7AC;
+}
+a:hover{color: greenyellow;}
+footer{
+    width:auto;
+    height:60px;
+    background: #FFF7AC;
+    justify-content: center;
+}
+#foot{    
+    font:1em bold;
+    color: #455FC0;
 }
