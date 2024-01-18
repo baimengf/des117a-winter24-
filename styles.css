@@ -1,24 +1,4 @@
-#banner{
-    width: 1600px;;
-    height:250px;
-    background:#FFF7AC;
-    margin:none;
-    transition: background-color 2s ease, width 2s ease;
-}
-#banner:hover{
-    background-color: greenyellow;
-    height: 350px;
-}
-h1{
-    font:'Pixelify Sans';
-    margin: auto;
-    color: #455FC0;
-    padding:20px;
-}
-#topic{
-    color: #455FC0;
-    padding:20px;
-}
+
 h2{color: #FFF7AC;}
 main{
     display:flex;
@@ -27,10 +7,20 @@ main{
     justify-content: space-evenly;
     min-height: 400px;
 }
-body{background: #455FC0;}
-#left{display:block;}
-#middle{display:block;}
-#right{display:block;}
+body{
+    background: #455FC0;
+}
+#left{
+    display:block;
+    background-image: url(Images/right_facing.png);
+    background-repeat: no-repeat;
+}
+#middle{
+    display:block;
+}
+#right{
+    display:block;
+}
 ul {
     list-style-type: none;
 }
@@ -44,11 +34,14 @@ a{
 a:hover{color: greenyellow;}
 footer{
     width:auto;
-    height:60px;
+    height:50px;
     background: #FFF7AC;
-    justify-content: center;
+    position:relative;
+    bottom:0;
 }
 #foot{    
     font:1em bold;
+    justify-content: center;
     color: #455FC0;
+    text-align: center;
 }
