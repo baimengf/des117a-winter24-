@@ -1,20 +1,26 @@
 body{
     background-color: blanchedalmond;
 }
-h1{
+h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding-left: 20px;
     padding-top: 50px;
 }
 p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 100px;
-}
-.datetime{
-    padding:0px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 a{
     font-weight: bolder;
     color: rgb(148, 83, 240);
     text-decoration: none;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
 }
