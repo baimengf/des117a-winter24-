@@ -10,6 +10,9 @@ p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 100px;
 }
+.datetime{
+    padding:0px;
+}
 a{
     font-weight: bolder;
     color: rgb(148, 83, 240);
