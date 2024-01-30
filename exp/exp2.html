@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exp1</title>
+    <style>
+        body {
+          font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+    <script>
+        //this program lists an array of colors, then a function asks the computer to select a random color from the array with math.random. The prompt asks the user to input one color from the array, if the color user chooses matches the randomly selected color, it will say user is right, if not right it will say try again.//
+        var colors=['blue','green','red','yellow','purple'];
+        function getRandomColor() {
+            var randomChoice = Math.floor(Math.random() * colors.length);
+            return colors[randomChoice];}
+
+        var userColor = prompt("Guess which of the following colors I'm thinking of: red, yellow, green, purple, or blue.").toLowerCase();
+
+        var computerColor = getRandomColor();
+        if (userColor === computerColor) {
+            alert("You are right!");
+        } else {
+            alert("Try again! The correct color was " + computerColor + ".");
+        }
+   </script>
+
+</body>
+</html>
