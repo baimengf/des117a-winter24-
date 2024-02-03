@@ -13,7 +13,9 @@ body{
 #left{
     display:block;
     background-image: url(Images/right_facing.png);
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100%;
+    background-repeat: no-repeat; 
 }
 #middle{
     display:block;
