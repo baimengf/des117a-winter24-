@@ -1,4 +1,6 @@
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #5e81ff;
 
@@ -10,6 +12,8 @@ article{
     background-size: 100%;
     background-repeat: no-repeat;  
     max-width: 1500px;
+    min-width: 1500px;
+    min-height: 500px;
     margin: 50px;
 
 }
