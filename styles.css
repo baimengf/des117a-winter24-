@@ -50,7 +50,7 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
-    color: #455FC0;
+    color: #ff9500;
     text-align: center;
 }
 p{
@@ -61,6 +61,6 @@ p{
     font:1em;
     font-weight: bold;
     justify-content: center;
-    color: #455FC0;
+    color: #ff9500;
     text-align: center;
 }
