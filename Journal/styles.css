@@ -3,7 +3,8 @@ body{
 }
 article{
     display: block;
-    background-image: -w;
+    margin:30px;
+
 }
 h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -12,13 +13,19 @@ h2{
 }
 p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);;
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    background-image: url(Images/greencloud.png);
+    background-size: contain;
+    background-size: 40% 100%;
+    background-repeat: no-repeat;
 }
 a{
-    font-weight: bolder;
+    font-weight: bold;
     color: rgb(250, 255, 107);
     text-decoration: none;
 }
