@@ -20,10 +20,10 @@ p{
     padding-right: 100px;
     padding-bottom: 0px;
     padding-top: 0px;
-    background-image: url(Images/greencloud.png);
+    /* background-image: url(Images/greencloud.png);
     background-size: contain;
     background-size: 40% 100%;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;  */
 }
 a{
     font-weight: bold;
