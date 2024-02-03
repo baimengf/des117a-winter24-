@@ -33,14 +33,21 @@ a{
 }
 a:hover{color: greenyellow;}
 footer{
-    width:auto;
-    height:50px;
     background: #FFF7AC;
-    position:relative;
-    bottom:0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #455FC0;
+    text-align: center;
+}
+p{
+    margin: 5px;
+    font-weight: bold;
 }
 #foot{    
-    font:1em bold;
+    font:1em;
+    font-weight: bold;
     justify-content: center;
     color: #455FC0;
     text-align: center;

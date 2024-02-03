@@ -8,8 +8,9 @@ article{
 }
 h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding-left: 20px;
-    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:  center;
 }
 p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -22,7 +23,7 @@ p{
     background-image: url(Images/greencloud.png);
     background-size: contain;
     background-size: 40% 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
 }
 a{
     font-weight: bold;
