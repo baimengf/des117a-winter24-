@@ -4,8 +4,9 @@
 
     const myArtical=document.getElementById('madlib');
     const myForm=document.querySelector('form');
+    const myBtn=document.querySelector('#button');
 
-    myForm.addEventListener('submit',function (event){
+    myBtn.addEventListener('click',function (event){
         event.preventDefault();
         const noun1=document.querySelector('#noun1').value;
         const animal=document.getElementById('animal').value;
@@ -74,6 +75,6 @@
             document.querySelector('#noun2').value="";
             document.querySelector('#noun3').value="";
         }
-        myArtical.innerHTML=myText;
+        document.querySelector('main').innerHTML=myText;
     });
 })();
