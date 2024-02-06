@@ -21,6 +21,7 @@ h1{
 }
 label{
     color: #A2F255;
+    margin-left: 200px;
 }
 input{
     display: block;
@@ -31,6 +32,7 @@ input{
     color: #A2F255;
     margin:10px;
     cursor: pointer;
+    margin-left: 200px;
 }
 input[type="text"]:focus {
     box-shadow: 0 5px 8px 0 rgb(99, 0, 0), 0 5px 20px 0 rgba(99, 0, 0);
@@ -44,16 +46,18 @@ input[type='submit']{
     color: #A2F255;
     margin:10px;
     cursor: pointer;
+    margin-left: -400px;
 }
 button{
     background-color: transparent;
     border: none;
 }
 footer{
-    background-color: rgb(133, 80, 190);
+    background-color: rgb(150, 90, 190);
     color: #3C1B72;
     position: fixed;
     text-align: center;
+    font-size: small;
     bottom: 0;
     width: 100%;
 }
