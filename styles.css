@@ -33,11 +33,16 @@ body{
     right:400px;
     min-width: 300px;
     position: relative;
-    background-image: url(Images/right_facing.png);
     background-size: contain;
     background-size: 100%;
     background-repeat: no-repeat; 
 }
+.right{
+    background-image: url(Images/right_facing.png);
+}
+/* .right:hover{
+    background-image: url(Images/right_facing2.png);
+} */
 #left:hover{
     /* box-shadow: 5px 5px 5px greenyellow; */
     z-index: 1;

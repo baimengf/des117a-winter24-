@@ -8,8 +8,9 @@ html{
 }
 #flex{
     display: flex;
-    margin:50px;
-    gap:50px;
+    margin: 50px;
+    gap:120px;
+    color: #3C1B72;
 }
 fieldset{
     position: relative;
@@ -21,22 +22,32 @@ h1{
     min-width: 550px;
 }
 label{
-    color: #A2F255;
-    margin-left: 200px;
+    color: #3C1B72;
 }
 input{
     display: block;
-    min-width: 30px;
-    border:3px solid green;
+    min-width: 20px;
+    border:3px solid rgb(0, 90, 0);
     border-radius: 10px;
     background-color: transparent;
-    color: #A2F255;
+    color: rgb(0, 90, 0);
     margin:10px;
     cursor: pointer;
-    margin-left: 200px;
 }
 input[type="text"]:focus {
-    box-shadow: 0 5px 8px 0 rgb(99, 0, 0), 0 5px 20px 0 rgba(99, 0, 0);
+    box-shadow: 0 5px 10px 0 rgb(99, 0, 0), 0 5px 20px 0 rgba(99, 0, 0);
+}
+form{
+    font-size: small;
+}
+#text{
+    color: #3C1B72;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    padding-right: 100px;
+    padding-left: 130px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 #button{
     background-color: transparent;
@@ -44,14 +55,14 @@ input[type="text"]:focus {
     text-align: center;
     min-width: 150px;
     max-width: 150px;
-    border:3px solid green;
+    border:3px solid #A2F255;
     border-radius: 10px;
     background-color: transparent;
     color: #A2F255;
     margin-left:30%;
     cursor: pointer;
 }
-footer{
+/* footer{
     background-color: rgb(150, 90, 190);
     color: #3C1B72;
     position: fixed;
@@ -59,4 +70,4 @@ footer{
     font-size: small;
     bottom: 0;
     width: 100%;
-}
+} */
