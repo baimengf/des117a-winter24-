@@ -14,19 +14,19 @@ body{
     left:250px;
     min-width: 600px;
     position: relative;
-    background-image: url(Images/right_facing.png);
     background-size: contain;
     background-size: 100%;
     background-repeat: no-repeat; 
+    background-image: url(Images/right_facing.png);
 }
 #middle{
     top: 300px;
     min-width: 500px;
     position: relative;
-    background-image: url(Images/left_facing.png);
     background-size: contain;
     background-size: 100%;
     background-repeat: no-repeat; 
+    background-image: url(Images/left_facing.png);
 }
 #right{
     top: 100px;
@@ -36,25 +36,20 @@ body{
     background-size: contain;
     background-size: 100%;
     background-repeat: no-repeat; 
-}
-.right{
     background-image: url(Images/right_facing.png);
 }
-/* .right:hover{
+/* #right:hover{
     background-image: url(Images/right_facing2.png);
-} */
-#left:hover{
-    /* box-shadow: 5px 5px 5px greenyellow; */
     z-index: 1;
 }
 #middle:hover{
-    /* box-shadow: 5px 5px 5px greenyellow; */
+    background-image: url(Images/left_facing2.png);
     z-index: 1;
 }
-#right:hover{
-    /* box-shadow: 5px 5px 5px greenyellow; */
+#left:hover{
+    background-image: url(Images/right_facing2.png);
     z-index: 1;
-}
+} */
 #studio{
     position: relative;
     top: 80px;
