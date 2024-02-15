@@ -2,44 +2,69 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #5e81ff;
+    background-color: #0D291e;
+    background-image: url(Images/pic.png);
 
 }
 article{
     display: flex;
-    background-image: url(Images/pic.png);
     background-size: contain;
     background-size: 100%;
     background-repeat: no-repeat;  
-    max-width: 1400px;
-    min-width: 1400px;
+    max-width: 1200px;
+    min-width: 1200px;
     min-height: 400px;
     margin: 40px;
+    border-top: #FFFFFF;
+    border-top-style: solid;
 
 }
 .paragraph{
     display: block;
-    padding: 175px;
 }
 h2{
-    font-family: Impact;
-    padding-left: 100px;
+    font-family: "Protest Riot", sans-serif;
+    font-size: xx-large;
+    padding-left: 50px;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+    color: #ace5cc;
 }
 p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
-    color: rgb(0, 0, 0);;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    font-family: "Fredoka", sans-serif;;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: 800px;
+    color:#bcffe2;
 }
-
+time{
+    font-family: "Protest Riot", sans-serif;
+    padding-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    color: #ace5cc;
+}
+figcaption{
+    font-family: "Fredoka", sans-serif;
+    margin-left: none;
+    margin-right: auto;
+    text-align: left;
+    color:#ace5cc;
+}
+.flex{
+    display: flex;
+}
+.withpicture{
+    padding: none;
+    margin: none;
+}
 a{
-    font-weight: bold;
-    color: #5e81ff;
+    font-weight: bolder;
+    color: #ace5cc;
     text-decoration: none;
 }
