@@ -1,0 +1,55 @@
+:root {
+  --sliderwidth: 80%; 
+}
+
+@keyframes moveSlider {
+  from { left: 0; }
+  to { left: var(--sliderwidth); }
+}
+
+.animate {
+  animation-name: moveSlider;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(images/colors.png);
+  background-color: black;
+}
+
+#one {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.slider {
+  display: flex;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  height: 350px;
+  background-image: url(images/camroll.png);
+}
+
+.sliderpaused {
+  display: flex;
+  position: absolute;
+  top: 0;
+  height: 300px;
+}
+
+.slider div img {
+  height: 100%;
+  display: block;
+  margin-right: 15px;
+}
+
+.a, .b {
+  display: flex;
+  height: 85%;
+  margin-top: 26px;
+}
