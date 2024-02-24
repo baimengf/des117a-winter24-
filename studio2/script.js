@@ -56,35 +56,35 @@ window.addEventListener('load', function () {
     });
 })();
 
-document.addEventListener('DOMContentLoaded', function () {
-    const container = document.querySelector('body');
-    const backgroundImage = document.querySelector('.background-image');
+// document.addEventListener('DOMContentLoaded', function () {
+//     const container = document.querySelector('body');
+//     const backgroundImage = document.querySelector('.background-image');
 
-    function throttle(callback, limit) {
-        let waiting = false;
-        return function () {
-            if (!waiting) {
-                callback.apply(this, arguments);
-                waiting = true;
-                setTimeout(function () {
-                    waiting = false;
-                }, limit);
-            }
-        }
-    }
+//     function throttle(callback, limit) {
+//         let waiting = false;
+//         return function () {
+//             if (!waiting) {
+//                 callback.apply(this, arguments);
+//                 waiting = true;
+//                 setTimeout(function () {
+//                     waiting = false;
+//                 }, limit);
+//             }
+//         }
+//     }
 
-    container.addEventListener('mousemove', throttle(function (e) {
-        const mouseX = e.clientX;
-        const mouseY = e.clientY;
-        const containerWidth = container.offsetWidth;
-        const containerHeight = container.offsetHeight;
+//     container.addEventListener('mousemove', throttle(function (e) {
+//         const mouseX = e.clientX;
+//         const mouseY = e.clientY;
+//         const containerWidth = container.offsetWidth;
+//         const containerHeight = container.offsetHeight;
 
-        const offsetX = mouseX / containerWidth - 0.5;
-        const offsetY = mouseY / containerHeight - 0.5;
+//         const offsetX = mouseX / containerWidth - 0.5;
+//         const offsetY = mouseY / containerHeight - 0.5;
 
-        const moveX = -offsetX * 20;
-        const moveY = -offsetY * 20;
+//         const moveX = -offsetX * 20;
+//         const moveY = -offsetY * 20;
 
-        backgroundImage.style.transform = `translate(${moveX}px, ${moveY}px)`;
-    }, 16)); // 60fps
-});
+//         backgroundImage.style.transform = `translate(${moveX}px, ${moveY}px)`;
+//     }, 16)); // 60fps
+// });
