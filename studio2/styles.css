@@ -55,11 +55,12 @@ body {
   margin-top: 26px;
 }
 
-#overlay.hidden {
+/* Hidden class to initially hide overlays */
+.overlay.hidden {
   display: none; 
 }
 
-#overlay {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -69,7 +70,7 @@ body {
   z-index: 999;
 }
 
-#overlay article {
+.overlay article {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 20px;
   border-radius: 10px;
@@ -84,14 +85,14 @@ body {
   font-size: medium;
 }
 
-#overlay img {
+.overlay img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
   padding: 20px;
 }
 
-#overlay button.close {
+.overlay button.close {
   font-family: "Fredoka", sans-serif;;
   font-weight: 500;
   font-style: normal;
@@ -105,4 +106,3 @@ body {
   font-size: 15px;
   color: rgb(93, 0, 93);
 }
-
