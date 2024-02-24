@@ -4,12 +4,12 @@ window.addEventListener('load', function () {
     const sliderContent = document.querySelector('.a');
     const slider = document.querySelector('.slider');
     const sliderWidth = sliderContent.offsetWidth;
-    const cloned = sliderContent.cloneNode(true);
+    const cloned = sliderContent.cloneNode(true);// Cloning slider content for infinite loop
     cloned.className = "b";
     slider.appendChild(cloned);
     const root = document.querySelector(':root');
-    const endLeftPos = `-${sliderWidth}px`;    
-    root.style.setProperty('--sliderwidth', endLeftPos);
+    const endLeftPos = `-${sliderWidth}px`; // Calculating end left position  
+    root.style.setProperty('--sliderwidth', endLeftPos);// Setting CSS custom property 
 
     slider.classList.add("animate");
 
@@ -36,24 +36,24 @@ window.addEventListener('load', function () {
 
     function closeOverlay() {
         overlay.classList.add('hidden'); 
-    }
+    }//hides overlay initially
 
     document.querySelector('.close').addEventListener('click', function (event) {
         event.preventDefault();
         closeOverlay();
-    });
+    });//close overlay when close button is clicked
 
     overlay.addEventListener('click', function (event) {
         if (event.target === overlay) {
             closeOverlay();
         }
-    });
+    });//close overlay when background is clicked
 
     document.addEventListener('keydown', function (event) {
         if (event.key === 'Escape') {
             closeOverlay();
         }
-    });
+    });//close overlay when esc key pressed
 })();
 
 // document.addEventListener('DOMContentLoaded', function () {
