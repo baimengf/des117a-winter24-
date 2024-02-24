@@ -9,7 +9,7 @@
 
 .animate {
   animation-name: moveSlider;
-  animation-duration: 10s;
+  animation-duration: 12s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -18,6 +18,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(images/colors.png);
+  background-position: 50% 50%;
   background-color: black;
 }
 
@@ -53,3 +54,55 @@ body {
   height: 85%;
   margin-top: 26px;
 }
+
+#overlay.hidden {
+  display: none; 
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+#overlay article {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Fredoka", sans-serif;;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+}
+
+#overlay img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#overlay button.close {
+  font-family: "Fredoka", sans-serif;;
+  font-weight: 500;
+  font-style: normal;
+  font-size: medium;
+  position: absolute;
+  top:10px;
+  right:10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: rgb(93, 0, 93);
+}
+

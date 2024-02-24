@@ -7,31 +7,69 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Protest+Riot&display=swap" rel="stylesheet">
     <link rel="icon" href="Images/icon.png">
 </head>
 <body>
-    <section id="rainbow">
-        <section id="one">
-            <div class="slider">
-                <div class="a">
-                    <img src="images/1.jpg" alt="img">
-                    <img src="images/1.jpg" alt="img">
-                    <img src="images/1.jpg" alt="img">
-                    <img src="images/3.png" alt="img">
-                </div>
-            </div>
-        </section>
-   </section>
+    <section id="overlay" class="hidden">
+        <article>
+            <img id="image" src="images/1.png" alt="img">
+            <p id="description"><time datetime="2020/10/12">2020/10/12</time><br>
+            Location: <span id="location">Location: Weifang, Shandong</span><br>
+            Description: <span id="description">Description: Night market in Weifang</span></p>
+            <button class="close">Close</button>
+        </article>
+    </section>    
+    <section id="overlay" class="hidden">
+        <article>
+            <img id="image" src="images/2.png" alt="img">
+            <p id="description"><time datetime="2023/05/18">2023/05/18</time><br>
+            Location: <span id="location">Location: Davis, CA</span><br>
+            Description: <span id="description">I think they are harvesting the wheats that was planted, or hay, not sure.</span></p>
+            <button class="close">Close</button>
+        </article>
+    </section>    
+    <section id="overlay" class="hidden">
+        <article>
+            <img id="image" src="images/3.png" alt="img">
+            <p id="description"><time datetime="2023/05/18">2023/05/18</time><br>
+            Location: <span id="location">Location: Davis, CA</span><br>
+            Description: <span id="description">I think they are harvesting the wheats that was planted, or hay, not sure.</span></p>
+            <button class="close">Close</button>
+        </article>
+    </section> 
+    <section id="overlay" class="hidden">
+        <article>
+            <img id="image" src="images/4.png" alt="img">
+            <p id="description"><time datetime="2023/05/18">2023/05/18</time><br>
+            Location: <span id="location">Location: Davis, CA</span><br>
+            Description: <span id="description">I think they are harvesting the wheats that was planted, or hay, not sure.</span></p>
+            <button class="close">Close</button>
+        </article>
+    </section> 
+    <section id="overlay" class="hidden">
+        <article>
+            <img id="image" src="images/5.png" alt="img">
+            <p id="description"><time datetime="2023/05/18">2023/05/18</time><br>
+            Location: <span id="location">Location: Davis, CA</span><br>
+            Description: <span id="description">I think they are harvesting the wheats that was planted, or hay, not sure.</span></p>
+            <button class="close">Close</button>
+        </article>
+    </section> 
 
-   <!-- <section id="overlay" class="hidden">
-    <article>
-        <img src="images/1.jpg" alt="img">
-        <p><time datetime="2020/10/12">2020/10/12</time><br>
-        Location: Weifang, CN<br>
-        Description: Night market in Weifang</p>
-        <button class="close">close</button>
-    </article> -->
-</section>
+    <section id="slider">
+        <div class="slider">
+            <div class="a">
+                <img src="images/1.png" alt="img1" class="photo">
+                <img src="images/2.png" alt="img2" class="photo">
+                <img src="images/3.png" alt="img3" class="photo">
+                <img src="images/4.png" alt="img4" class="photo">
+                <img src="images/5.png" alt="img5" class="photo">
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
