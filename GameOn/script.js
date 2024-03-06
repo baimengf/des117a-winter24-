@@ -2,7 +2,6 @@
     'use strict';
     console.log('reading JS');
 
-    // variables for interface elements
     const bttn = document.querySelector('#action a');
     const game = document.querySelector('#game');
     const message = document.querySelector('#message');
@@ -20,7 +19,7 @@
         count: 3,
         increment: 3,
         score: 0,
-        speed: 2000,
+        speed: 1000,
         sequence: [0, 0, 0],
         match: [1, 1, 1]
     }
@@ -55,8 +54,7 @@
             animate the next pad in the sequence */ 
             if(counter < sequenceLength){
                 /* this settimeOut runs for different lengths of time,
-                as determined by the program. As the game continues the wait time 
-                is shorter and shorter*/
+                as determined by the program. As the game continues the wait time is shorter and shorter*/
                 setTimeout(function(){
                     for( const eachPad of pads ){
                         eachPad.removeAttribute('class');
@@ -67,8 +65,7 @@
             }
 
             /* If the sequence is complete, wait the programmed amount of
-            time, then remove the .on class from all pads, clear out the gameData.match
-            array and capture the response. */
+            time, then remove the .on class from all pads, clear out the gameData.match  array and capture the response. */
             else {
                 setTimeout(function(){
                     for( const eachPad of pads ){
@@ -87,8 +84,7 @@
     function captureResponse(){
         action.innerHTML = '';
         message.innerHTML = 'Can you match the pattern?'
-        /* The status variable is used to check the status of the game. Should it
-        continue, or should it end because the player got the pattern wrong? */
+        /* The status variable is used to check the status of the game. Should it  continue, or should it end because the player got the pattern wrong? */
         let status = 0;
         // looping through the array of pads...
         for( const eachPad of pads){
@@ -101,9 +97,7 @@
                 setTimeout(function(){
                     event.target.removeAttribute('class');
                 }, 1000);
-                /* The following line pulls out the number at the end of the ID for the
-                pad that was clicked (charAt()), converts it into an integer (parseInt()) 
-                Then pushes it into the gameData.match array (push())*/
+                /* The following line pulls out the number at the end of the ID for the pad that was clicked (charAt()), converts it into an integer (parseInt()) Then pushes it into the gameData.match array (push())*/
                 gameData.match.push(parseInt(id.charAt(3)));
 
                 /* This if statement checks to see if the length of the two
@@ -111,17 +105,14 @@
                 if( gameData.match.length == gameData.sequence.length){
                     console.log(gameData.match);
                     /* This loops through the match array and checks
-                    to see if each element matches the corresponding element in the 
-                    sequence array. */
+                    to see if each element matches the corresponding element in the sequence array. */
                     for( let i=0; i<gameData.match.length; i++){
-                        /* if any of the elements in the array do not match, then status
-                        is set to zero and the player loses the game */
+                        /* if any of the elements in the array do not match, then status is set to zero and the player loses the game */
                         if( gameData.match[i] != gameData.sequence[i]){
                             status = 0;
                             message.innerHTML = "Sorry you lose. Better luck next time!";
                         }
-                        /* If none of the matches in the loop trigger an error, status
-                        is set to 1 and that value will be used to continue the game */
+                        /* If none of the matches in the loop trigger an error, status is set to 1 and that value will be used to continue the game */
                         else {
                             status = 1;
                         }
@@ -137,15 +128,13 @@
         }
     }
 
-    /* This function sets up the game for the next sequence and updates the game variables
-    and interface. */
+    /* This function sets up the game for the next sequence and updates the game variables and interface. */
     function setupNextRound(){
         //reset the counter for the next sequence
         counter = 0;
         // update the score
         gameData.score = gameData.score + gameData.count*5;
-        /* the increment variable is used to determine how many rounds have each count.
-        Currently, the game is set to three rounds of three pads, three rounds of four pads, etc. */
+        /* the increment variable is used to determine how many rounds have each count. Currently, the game is set to three rounds of three pads, three rounds of four pads, etc. */
         gameData.increment = gameData.increment -1;
         /* if the player completed three rounds, increase the count and reset the incrementer */
         /* TODO: introduce "levels", increase levels for the player every time the count goes up */
@@ -163,8 +152,7 @@
         currentScore.innerHTML = gameData.score;
         message.innerHTML = "Great job! You got that one ready for the next one?";
         action.innerHTML = '<a href="#">Start Next Round</a>';
-        /* This replaces all the pads with new ones. This is necessary otherwise the old pads will
-        get additional event listeners added to them in the captureResponse() function. There is the added
+        /* This replaces all the pads with new ones. This is necessary otherwise the old pads will get additional event listeners added to them in the captureResponse() function. There is the added
         benefit of not having event listeners on the pads during the callSequence phase of the game. */
         game.innerHTML = '<div id="pad1"></div><div id="pad2"></div><div id="pad3"></div><div id="pad4"></div><div id="pad5"></div>';
 
@@ -181,3 +169,6 @@
     }
 
 })();
+
+//end of Bill's code
+

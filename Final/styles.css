@@ -1,0 +1,31 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #0D291e;
+    background-image: url(Images/pic.png);
+}
+h1{
+    font-family: "Protest Riot", sans-serif;
+    font-size: xx-large;
+    padding-left: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    color: #ace5cc;
+}
+p{
+    font-family: "Fredoka", sans-serif;;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding-right:250px;
+    padding-left: 250px;
+    width: 800px;
+    color:#bcffe2;
+}
+a{
+    font-weight: bolder;
+    color: rgb(188, 255, 32);
+    text-decoration: none;
+}
