@@ -158,6 +158,11 @@
 
         /* This event listener kicks off the start of the next callSequence function and continues 
         the game. */
+        document.querySelectorAll('#game img').forEach(function(img) {
+            img.addEventListener('click', function() {
+                
+            });
+        });
         document.querySelector('#action a').addEventListener('click', function(event){
             event.preventDefault();
             callSequence(gameData.count, gameData.speed);
@@ -169,6 +174,3 @@
     }
 
 })();
-
-//end of Bill's code
-

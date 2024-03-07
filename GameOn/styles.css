@@ -1,41 +1,68 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    color: white;
-    background-color: #000000;
+    color: rgb(229, 164, 255);
+    background-color: #040022;
 }
 
 #pad1, #pad2, #pad3, #pad4, #pad5 {
-    opacity: 0.6;
-    height: 500px;
+    opacity: 0.7;
 }
 
-@keyframes wiggle {
-    0% { transform: rotate(0deg); }
-   80% { transform: rotate(0deg); }
-   85% { transform: rotate(5deg); }
-   95% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
+#pad1 {
+    position: absolute;
+    top: 5%;
+    left: 73%;
+}
+
+#pad2 {
+    position: absolute;
+    top: 30%;
+    left: 58%;
+}
+
+#pad3 {
+    position: absolute;
+    top: 50%;
+    left: 42%;
+}
+
+#pad4 {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+
+#pad5 {
+    position: absolute;
+    top: 5%;
+    left: 12%;
+}
+
+@keyframes vibrate {
+    0% { transform: translate(-2px, -2px); }
+    25% { transform: translate(2px, 2px); }
+    50% { transform: translate(0, -2px); }
+    75% { transform: translate(-2px, 2px); }
+    100% { transform: translate(2px, -2px); }
 }
 
 .on {
     opacity: 1;
-    animation: wiggle 2.5s;
+    animation: vibrate 0.1s ease-in-out infinite;
 }
 
 img {
     max-height: 425px;
-    padding: 50% 50%;
 }
 
 #action a {
     display: block;
     text-decoration: none;
     padding: 15px;
-    font-style: SixtyFour;
     background-color: transparent;
     border: 2px solid rgb(229, 164, 255);
-    border-radius: 20px;
+    border-radius: 30px;
     width: 100px;
     margin: auto;
     color: rgb(229, 164, 255);
@@ -47,9 +74,6 @@ img {
 }
 
 #game div {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
     transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
     margin: 0 10px;
 }
@@ -59,7 +83,7 @@ img {
 }
 
 #game {
-    display: flex;
+    /* display: flex; */
     gap: 50px;
     justify-content: center;
     height: 500px;
