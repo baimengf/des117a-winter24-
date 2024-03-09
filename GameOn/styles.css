@@ -1,11 +1,12 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: SixtyFour;
     text-align: center;
     color: rgb(229, 164, 255);
     background-color: #040022;
 }
 
 #pad1, #pad2, #pad3, #pad4, #pad5 {
+    position: absolute;
     opacity: 0.7;
 }
 
@@ -68,7 +69,9 @@ img {
     color: rgb(229, 164, 255);
     font-weight: bold;
 }
-
+#action{
+    padding-top: 10px;
+}
 #score span {
     font-weight: bold;
 }
@@ -83,10 +86,8 @@ img {
 }
 
 #game {
-    /* display: flex; */
+    display: flex;
     gap: 50px;
-    justify-content: center;
-    height: 500px;
 }
 
 #text {
