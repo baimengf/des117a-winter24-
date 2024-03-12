@@ -166,7 +166,7 @@
         /* This replaces all the pads with new ones. This is necessary otherwise the old pads will
         get additional event listeners added to them in the captureResponse() function. There is the added
         benefit of not having event listeners on the pads during the callSequence phase of the game. */
-        game.innerHTML = '<div id="pad1"></div><div id="pad2"></div><div id="pad3"></div><div id="pad4"></div><div id="pad5"></div>';
+        game.innerHTML = `<div id="pad1"><img src="images/5.png" alt="Pad 1" id="pad1"></div><div id="pad2"><img src="images/2.png" alt="Pad 2" id="pad2"></div><div id="pad3"><img src="images/1.png" alt="Pad 3" id="pad3"></div><div id="pad4"><img src="images/3.png" alt="Pad 4" id="pad4"></div><div id="pad5"><img src="images/4.png" alt="Pad 5" id="pad5"></div>`;
 
         /* This event listener kicks off the start of the next callSequence function and continues 
         the game. */
