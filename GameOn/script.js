@@ -25,6 +25,14 @@
         match: [1, 1, 1]
     }
 
+    const sounds = {
+        1: document.getElementById('sound1'),
+        2: document.getElementById('sound2'),
+        3: document.getElementById('sound3'),
+        4: document.getElementById('sound4'),
+        5: document.getElementById('sound5')
+    };    
+
     // Gets the game started
     bttn.addEventListener('click', function(event){
         event.preventDefault();
@@ -161,8 +169,8 @@
         }
         // set the new score
         currentScore.innerHTML = gameData.score;
-        message.innerHTML = "Great job! You got that one ready for the next one?";
-        action.innerHTML = '<a href="#">Start Next Round</a>';
+        message.innerHTML = "Great job!";
+        action.innerHTML = '<a href="#">Next Round!</a>';
         /* This replaces all the pads with new ones. This is necessary otherwise the old pads will
         get additional event listeners added to them in the captureResponse() function. There is the added
         benefit of not having event listeners on the pads during the callSequence phase of the game. */
