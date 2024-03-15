@@ -14,6 +14,15 @@ h1{
     text-align: left;
     color: #ace5cc;
 }
+h3{
+    font-family: "Protest Riot", sans-serif;
+    font-size: large;
+    padding-left: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    color: #ace5cc;
+}
 p{
     font-family: "Fredoka", sans-serif;;
     font-weight: 400;
