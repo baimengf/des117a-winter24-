@@ -42,10 +42,33 @@ window.addEventListener('load', function () {
             overlay.classList.remove('hidden');
         });
     });
-});
 
-(function () {
-    'use strict';
+    // Add event listener to submit button
+    const submitButtons = document.querySelectorAll('.submit');
+    submitButtons.forEach(function (button) {
+        button.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            // Get the parent element of the submit button
+            const thoughtsSection = this.parentElement;
+
+            // Create a new paragraph element
+            const thankYouText = document.createElement('p');
+            thankYouText.textContent = "Thank you for sending this in - to the void :'P";
+            thankYouText.style.color = "lightgreen"; // Set color to light green
+
+            // Replace the content of the thoughts section with the styled text
+            thoughtsSection.innerHTML = ''; // Clear existing content
+            thoughtsSection.appendChild(thankYouText); 
+        });
+    });
+
+    const doodle = document.getElementById('doodle');
+    const locationOverlay = document.getElementById('location-overlay');
+
+    doodle.addEventListener('click', function () {
+        locationOverlay.classList.toggle('hidden');
+    });
 
     const overlay = document.querySelectorAll('.overlay');
 
@@ -75,4 +98,5 @@ window.addEventListener('load', function () {
             closeOverlay();
         }
     }); //close overlay when esc key pressed
-})();
+
+});
