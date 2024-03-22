@@ -99,4 +99,34 @@ window.addEventListener('load', function () {
         }
     }); //close overlay when esc key pressed
 
+    const locationButtons = document.querySelectorAll('.location');
+
+    locationButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            const targetId = this.getAttribute('data-images');
+            const targetSection = document.querySelector(targetId);
+
+            // Hide all overlay sections
+            const overlays = document.querySelectorAll('.overlay');
+            overlays.forEach(function (overlay) {
+                overlay.classList.add('hidden');
+            });
+
+            // Show the target overlay section
+            targetSection.classList.remove('hidden');
+        });
+    });
+
+    const backButton = document.querySelectorAll('.back'); // Select all elements with the class 'back'
+
+    backButton.forEach(function (button) {
+        button.addEventListener('click', function () {
+            const parentOverlay = this.parentElement; // Assuming the back button is inside a section
+            parentOverlay.classList.add('hidden');
+
+            // Show the doodle overlay
+            const doodleOverlay = document.getElementById('location-overlay');
+            doodleOverlay.classList.remove('hidden');
+        });
+    });
 });
