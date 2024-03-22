@@ -101,7 +101,6 @@ body {
   height: auto;
   padding: 30px;
   background-image: url(images/polaroid.png);
-  size: 100%;
 }
 
 .overlay button.close {
@@ -130,9 +129,6 @@ body {
 .overlay article .thoughts {
   margin-top: 20px; 
   padding-left: 150px;
-}
-.input-field::placeholder {
-  text-align: top;
 }
 .overlay article .submit {
   display: block; 
